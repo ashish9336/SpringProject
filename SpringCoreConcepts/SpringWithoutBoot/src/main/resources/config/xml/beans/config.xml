@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+
+    <!-- bean definitions here -->
+    <bean class="config.xml.beans.Student" id="student1">
+    <property name="name" value="Ashish" />
+    <property name="age" value="24"/>
+    <property name="address" ref="address" />
+    </bean>
+
+    <bean id="address" class="config.xml.beans.Address">
+        <property name="city" value="lko"/>
+        <property name="street" value="12345"/>
+    </bean>
+</beans>
