@@ -9,14 +9,18 @@ public class Car extends Vehicle{
     }
     //creating car Constructor
 
-    Car(){
+    /*Car(){
         super(4);
+        System.out.println("car is staring begining");
+    }*/
+    Car(){
+        super(2,"120");
         System.out.println("car is staring begining");
     }
     public static void main(String[] args) {
         Car obj = new Car();
-        obj.wheelCount=4;
-        obj.model="110";
+        obj.wheelCount=2;
+        obj.model="120";
         obj.start();
     }
 }
