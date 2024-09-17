@@ -1,6 +1,7 @@
 package oops2;
 
-public class Vehicle {
+public  class Vehicle {
+
     int wheelCount;
     String model;
 
@@ -9,13 +10,13 @@ public class Vehicle {
     }
     Vehicle(int wheelCount){
         this.wheelCount=wheelCount;
-        System.out.println("Creating a vehicle with wheelCount");
+        System.out.println("Creating a vehicle with Model");
     }
-    Vehicle(int wheelCount,String model){
+    /*Vehicle(int wheelCount){
         this.wheelCount=wheelCount;
         this.model="120";
         System.out.println("Creating a vehicle and model"+wheelCount+""+model);
-    }
+    }*/
 
     void start(){
         System.out.println("Vehicle is starting");
@@ -23,5 +24,9 @@ public class Vehicle {
 
     public static void main(String[] args) {
 
+    }
+    //final Method
+    final void accelerate(){
+        System.out.println("Vehicle is accelerating");
     }
 }
